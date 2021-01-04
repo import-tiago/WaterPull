@@ -2,7 +2,7 @@
 WaterPull is an electronic polymer dryer focused on removing moisture from 3D printer filaments. It has control and adjustment of temperature and curing time, internal air circulation and alarms.
 
 ## PCB Preview
-<img src="" width="100%" height="100%">
+<img src="https://github.com/TiagoPaulaSilva/WaterPull/blob/master/Assets/PCB%20Preview.png" width="100%" height="100%">
 
 ## Enclosure Preview
 <p align="center"><img src="" width="70%" height="70%"></p>
