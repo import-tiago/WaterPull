@@ -5,7 +5,7 @@ WaterPull is an electronic polymer dryer focused on removing moisture from 3D pr
 <img src="https://github.com/TiagoPaulaSilva/WaterPull/blob/master/Assets/PCB%20Preview.png" width="100%" height="100%">
 
 ## Enclosure Preview
-<p align="center"><img src="" width="70%" height="70%"></p>
+<p align="center"><img src="https://github.com/TiagoPaulaSilva/WaterPull/blob/master/Assets/Enclouse%20Preview.png" width="100%" height="70%"></p>
 
 ## Schematic
 <img src="https://github.com/TiagoPaulaSilva/WaterPull/blob/master/Assets/Schematic%20Preview.png" width="100%" height="100%">
