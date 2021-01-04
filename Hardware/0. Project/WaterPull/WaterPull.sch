@@ -24447,7 +24447,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pad name="2" x="-1" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="1" x="1" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-3" y="3.5001" size="1.27" layer="25">&gt;NAME</text>
-<text x="2.5511" y="-2.4839" size="1.27" layer="21" align="center">+</text>
+<text x="-2.9099" y="-2.4839" size="1.27" layer="21" align="center">+</text>
 </package>
 </packages>
 <symbols>
@@ -24652,20 +24652,19 @@ BT138_SERIES_2.pdf</description>
 <schematic_group name="COOLING_FAN"/>
 </groups>
 <parts>
-<part name="OK1" library="optocoupler" deviceset="MOC30*M" device="" package3d_urn="urn:adsk.eagle:package:21942/1" override_package3d_urn="urn:adsk.eagle:package:25763079/2" override_package_urn="urn:adsk.eagle:footprint:21857/1" technology="10" value="MOC3020"/>
+<part name="U7" library="optocoupler" deviceset="MOC30*M" device="" package3d_urn="urn:adsk.eagle:package:21942/1" override_package3d_urn="urn:adsk.eagle:package:25763079/2" override_package_urn="urn:adsk.eagle:footprint:21857/1" technology="10" value="MOC3020"/>
 <part name="T1" library="triac" deviceset="BT138" device="-H" package3d_urn="urn:adsk.eagle:package:30151/1" override_package3d_urn="urn:adsk.eagle:package:25763006/2" override_package_urn="urn:adsk.eagle:footprint:25763007/1" value="BTB16-800BW"/>
 <part name="D1" library="diode" deviceset="DIAC-" device="DO35-10" package3d_urn="urn:adsk.eagle:package:43344/2" value="DB3"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="KRE" override_package3d_urn="urn:adsk.eagle:package:25762923/2" override_package_urn="urn:adsk.eagle:footprint:9865/1" value="500W"/>
+<part name="CN2" library="rcl" deviceset="R-US_" device="KRE" override_package3d_urn="urn:adsk.eagle:package:25762923/2" override_package_urn="urn:adsk.eagle:footprint:9865/1" value="500W"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="1k"/>
 <part name="B1" library="rectifier" library_urn="urn:adsk.eagle:library:336" deviceset="MB*S" device="" package3d_urn="urn:adsk.eagle:package:23902/1" override_package3d_urn="urn:adsk.eagle:package:25763099/2" override_package_urn="urn:adsk.eagle:footprint:23861/1" technology="1" value="MB6S"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="10k"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="10k"/>
 <part name="SUPPLY3" library="My-Supply" deviceset="0V" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="R6" library="My-RLC" deviceset="R_" device="0805" package3d_urn="urn:adsk.eagle:package:23494098/2" value="10k"/>
 <part name="SUPPLY4" library="My-Supply" deviceset="5V" device=""/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220R"/>
-<part name="SUPPLY5" library="My-Supply" deviceset="0V" device=""/>
-<part name="LCD1" library="LCD 16X2 i2c" deviceset="TUXGR_16X2_R2" device="" package3d_urn="urn:adsk.eagle:package:13139/1" override_package3d_urn="urn:adsk.eagle:package:25763022/2" override_package_urn="urn:adsk.eagle:footprint:25763023/1" value=""/>
+<part name="R7" library="My-RLC" deviceset="R_" device="0805" package3d_urn="urn:adsk.eagle:package:23494098/2" value="330R"/>
+<part name="CN4" library="LCD 16X2 i2c" deviceset="TUXGR_16X2_R2" device="" package3d_urn="urn:adsk.eagle:package:13139/1" override_package3d_urn="urn:adsk.eagle:package:25763022/2" override_package_urn="urn:adsk.eagle:footprint:25763023/1" value=""/>
 <part name="SUPPLY7" library="My-Supply" deviceset="0V" device=""/>
 <part name="SUPPLY8" library="My-Supply" deviceset="5V" device=""/>
 <part name="SUPPLY9" library="My-Supply" deviceset="0V" device=""/>
@@ -24684,7 +24683,7 @@ BT138_SERIES_2.pdf</description>
 <part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
 <part name="VUSB" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="VUSB"/>
 <part name="C4" library="My-RLC" deviceset="C_" device="0805" package3d_urn="urn:adsk.eagle:package:23494063/2" value="100 nF"/>
-<part name="CN1" library="My-Connectors" deviceset="USB-B" device="" override_package3d_urn="urn:adsk.eagle:package:25763050/2" override_package_urn="urn:adsk.eagle:footprint:25763051/1"/>
+<part name="CN6" library="My-Connectors" deviceset="USB-B" device="" override_package3d_urn="urn:adsk.eagle:package:25763050/2" override_package_urn="urn:adsk.eagle:footprint:25763051/1"/>
 <part name="SUPPLY10" library="My-Supply" deviceset="0V" device=""/>
 <part name="SUPPLY11" library="My-Supply" deviceset="0V" device=""/>
 <part name="SUPPLY12" library="My-Supply" deviceset="0V" device=""/>
@@ -24701,7 +24700,7 @@ BT138_SERIES_2.pdf</description>
 <part name="R3" library="My-RLC" deviceset="R_" device="0805" package3d_urn="urn:adsk.eagle:package:23494098/2" value="1k"/>
 <part name="R12" library="My-RLC" deviceset="R_" device="0805" package3d_urn="urn:adsk.eagle:package:23494098/2" value="1k"/>
 <part name="D3" library="My-Diodes" deviceset="SS34" device="" package3d_urn="urn:adsk.eagle:package:23536213/2"/>
-<part name="U4" library="diy-modules" deviceset="TEMP-HUM-SENSOR-DHT22" device="" override_package3d_urn="urn:adsk.eagle:package:25763234/2" override_package_urn="urn:adsk.eagle:footprint:25763235/1" value="AM2302 (DHT22)"/>
+<part name="CN5" library="diy-modules" deviceset="TEMP-HUM-SENSOR-DHT22" device="" override_package3d_urn="urn:adsk.eagle:package:25763234/2" override_package_urn="urn:adsk.eagle:footprint:25763235/1" value="AM2302 (DHT22)"/>
 <part name="SUPPLY24" library="My-Supply" deviceset="5V" device=""/>
 <part name="SUPPLY25" library="My-Supply" deviceset="0V" device=""/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
@@ -24709,7 +24708,7 @@ BT138_SERIES_2.pdf</description>
 <part name="Q2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" technology="BC817-16" value="BC817"/>
 <part name="SUPPLY23" library="My-Supply" deviceset="5V" device=""/>
 <part name="SUPPLY27" library="My-Supply" deviceset="0V" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k2"/>
+<part name="R8" library="My-RLC" deviceset="R_" device="0805" package3d_urn="urn:adsk.eagle:package:23494098/2" value="2k2"/>
 <part name="FRAME2" library="frames-OSHW" deviceset="TABL_L" device=""/>
 <part name="LS1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="-PTH" override_package3d_urn="urn:adsk.eagle:package:25763054/2" override_package_urn="urn:adsk.eagle:footprint:25763055/1" value=""/>
 <part name="SW1" library="rotary-encoder" deviceset="KY-040" device="" override_package3d_urn="urn:adsk.eagle:package:25763182/2" override_package_urn="urn:adsk.eagle:footprint:25763183/1"/>
@@ -24718,10 +24717,10 @@ BT138_SERIES_2.pdf</description>
 <part name="SW2" library="switch-HH-NO-MODEL" deviceset="320-938" device="" value="HH 6T"/>
 <part name="F1" library="fuse-no-footprint" deviceset="FUSE" device="" value="100mA"/>
 <part name="BR1" library="My-Rectifiers" deviceset="W10M" device="" override_package3d_urn="urn:adsk.eagle:package:25763043/2" override_package_urn="urn:adsk.eagle:footprint:25763044/1"/>
-<part name="T2" library="My-Transformers" deviceset="TRAFO3" device="" override_package3d_urn="urn:adsk.eagle:package:25763031/2" override_package_urn="urn:adsk.eagle:footprint:25763032/1" value="7.5V + 7.5V @ 500mA"/>
+<part name="CN7" library="My-Transformers" deviceset="TRAFO3" device="" override_package3d_urn="urn:adsk.eagle:package:25763031/2" override_package_urn="urn:adsk.eagle:footprint:25763032/1" value="7.5V + 7.5V @ 500mA"/>
 <part name="C9" library="rcl" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200uF x 25V"/>
 <part name="C10" library="My-RLC" deviceset="C_" device="0805" package3d_urn="urn:adsk.eagle:package:23494063/2" value="100nF"/>
-<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="TV" package3d_urn="urn:adsk.eagle:package:16417/2" technology="12"/>
+<part name="U8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="TV" package3d_urn="urn:adsk.eagle:package:16417/2" technology="12"/>
 <part name="C11" library="My-RLC" deviceset="C_" device="0805" package3d_urn="urn:adsk.eagle:package:23494063/2" value="10uF x 16V"/>
 <part name="C12" library="My-RLC" deviceset="C_" device="0805" package3d_urn="urn:adsk.eagle:package:23494063/2" value="100nF"/>
 <part name="U6" library="REG1117" deviceset="REG1117" device="" override_package3d_urn="urn:adsk.eagle:package:25763121/2" override_package_urn="urn:adsk.eagle:footprint:25763122/1"/>
@@ -24730,14 +24729,19 @@ BT138_SERIES_2.pdf</description>
 <part name="SUPPLY28" library="My-Supply" deviceset="0V" device=""/>
 <part name="SUPPLY29" library="My-Supply" deviceset="12V" device=""/>
 <part name="SUPPLY30" library="My-Supply" deviceset="5V" device=""/>
-<part name="CN2" library="Instrumentos" deviceset="GENERATOR-FP" device="" override_package3d_urn="urn:adsk.eagle:package:25762977/2" override_package_urn="urn:adsk.eagle:footprint:9865/1" value="127/220VAC"/>
+<part name="CN1" library="Instrumentos" deviceset="GENERATOR-FP" device="" override_package3d_urn="urn:adsk.eagle:package:25762977/2" override_package_urn="urn:adsk.eagle:footprint:9865/1" value="127/220VAC"/>
 <part name="Q3" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" technology="BC817-16" value="BC817"/>
 <part name="SUPPLY2" library="My-Supply" deviceset="0V" device=""/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k2"/>
-<part name="CN3" library="My-Electromechanicals" deviceset="FAN-COOLER" device="" override_package3d_urn="urn:adsk.eagle:package:25763075/2" override_package_urn="urn:adsk.eagle:footprint:25763076/1" value="12V @ 150mA"/>
+<part name="R14" library="My-RLC" deviceset="R_" device="0805" package3d_urn="urn:adsk.eagle:package:23494098/2" value="2k2"/>
+<part name="CN3" library="My-Electromechanicals" deviceset="FAN-COOLER" device="" override_package3d_urn="urn:adsk.eagle:package:25763075/2" override_package_urn="urn:adsk.eagle:footprint:25763076/1" override_locally_modified="yes" value="12V @ 150mA"/>
 <part name="SUPPLY1" library="My-Supply" deviceset="12V" device=""/>
 <part name="D2" library="My-Diodes" deviceset="1N4148WS" device="" override_package3d_urn="urn:adsk.eagle:package:25763191/2" override_package_urn="urn:adsk.eagle:footprint:25763192/1"/>
 <part name="SUPPLY31" library="My-Supply" deviceset="5V" device=""/>
+<part name="Q4" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" technology="BC817-16" value="BC817"/>
+<part name="SUPPLY32" library="My-Supply" deviceset="0V" device=""/>
+<part name="R15" library="My-RLC" deviceset="R_" device="0805" package3d_urn="urn:adsk.eagle:package:23494098/2" value="3k3"/>
+<part name="SUPPLY5" library="My-Supply" deviceset="5V" device=""/>
+<part name="D4" library="My-Diodes" deviceset="SS34" device="" package3d_urn="urn:adsk.eagle:package:23536213/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -24746,42 +24750,42 @@ BT138_SERIES_2.pdf</description>
 <text x="332.867" y="22.225" size="2.413" layer="94" align="center">github.com/TiagoPaulaSilva/WaterPull</text>
 <text x="389.89" y="1.27" size="2.54" layer="94" ratio="5">1.0</text>
 <text x="318.77" y="6.35" size="2.54" layer="94" ratio="5">Complete Schematic</text>
-<text x="248.285" y="92.964" size="1.27" layer="97" grouprefs="HEATER_POWER_DRIVER">A2</text>
-<text x="248.285" y="86.995" size="1.27" layer="97" grouprefs="HEATER_POWER_DRIVER">A1</text>
-<text x="144.78" y="104.14" size="1.778" layer="98" align="top-right">*With Arduino UNO bootloader</text>
-<text x="115.57" y="46.355" size="1.27" layer="98" grouprefs="MICROCONTROLLER">D7</text>
-<text x="115.57" y="64.135" size="1.27" layer="98" grouprefs="MICROCONTROLLER">A5</text>
-<text x="115.57" y="61.595" size="1.27" layer="98">A4</text>
-<text x="115.57" y="38.735" size="1.27" layer="98">D4</text>
-<text x="115.57" y="71.755" size="1.27" layer="98">D9</text>
-<text x="115.57" y="69.215" size="1.27" layer="98">D8</text>
-<text x="115.57" y="33.655" size="1.27" layer="98">D2</text>
-<text x="115.57" y="41.275" size="1.27" layer="98">D5</text>
-<text x="115.57" y="36.195" size="1.27" layer="98">D3</text>
-<rectangle x1="41.91" y1="228.6" x2="80.01" y2="255.27" layer="204" grouprefs="POWER_SUPPLY"/>
-<text x="60.96" y="253.365" size="1.6764" layer="204" font="vector" align="center" grouprefs="POWER_SUPPLY">Wired mounting outside the PCB</text>
-<text x="115.57" y="43.815" size="1.27" layer="98">D6</text>
+<text x="252.095" y="74.549" size="1.27" layer="97" grouprefs="HEATER_POWER_DRIVER">A2</text>
+<text x="252.095" y="68.58" size="1.27" layer="97" grouprefs="HEATER_POWER_DRIVER">A1</text>
+<text x="144.78" y="99.06" size="1.778" layer="98" align="top-right">*With Arduino UNO bootloader</text>
+<text x="115.57" y="41.275" size="1.27" layer="98" grouprefs="MICROCONTROLLER">D7</text>
+<text x="115.57" y="59.055" size="1.27" layer="98" grouprefs="MICROCONTROLLER">A5</text>
+<text x="115.57" y="56.515" size="1.27" layer="98">A4</text>
+<text x="115.57" y="33.655" size="1.27" layer="98">D4</text>
+<text x="115.57" y="66.675" size="1.27" layer="98">D9</text>
+<text x="115.57" y="64.135" size="1.27" layer="98">D8</text>
+<text x="115.57" y="28.575" size="1.27" layer="98">D2</text>
+<text x="115.57" y="36.195" size="1.27" layer="98">D5</text>
+<text x="115.57" y="31.115" size="1.27" layer="98">D3</text>
+<rectangle x1="41.91" y1="228.6" x2="101.6" y2="255.27" layer="204" grouprefs="POWER_SUPPLY"/>
+<text x="72.136" y="253.619" size="1.6764" layer="204" font="vector" align="center" grouprefs="POWER_SUPPLY">Wired mounting outside the PCB</text>
+<text x="115.57" y="38.735" size="1.27" layer="98">D6</text>
 </plain>
 <instances>
-<instance part="OK1" gate="-1" x="216.535" y="93.98" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
-<attribute name="NAME" x="208.8896" y="102.2096" size="1.778" layer="95"/>
-<attribute name="VALUE" x="208.8896" y="83.8962" size="1.778" layer="96"/>
+<instance part="U7" gate="-1" x="220.345" y="75.565" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
+<attribute name="NAME" x="212.6996" y="83.7946" size="1.778" layer="95"/>
+<attribute name="VALUE" x="212.6996" y="65.4812" size="1.778" layer="96"/>
 </instance>
-<instance part="T1" gate="G$1" x="247.65" y="88.9" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
-<attribute name="NAME" x="251.46" y="91.44" size="1.778" layer="95"/>
-<attribute name="VALUE" x="251.46" y="88.9" size="1.778" layer="96"/>
+<instance part="T1" gate="G$1" x="251.46" y="70.485" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
+<attribute name="NAME" x="255.27" y="73.025" size="1.778" layer="95"/>
+<attribute name="VALUE" x="255.27" y="70.485" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="-B1" x="235.585" y="88.9" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
-<attribute name="NAME" x="236.347" y="89.789" size="1.778" layer="95"/>
-<attribute name="VALUE" x="236.347" y="86.233" size="1.778" layer="96"/>
+<instance part="D1" gate="-B1" x="239.395" y="70.485" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
+<attribute name="NAME" x="240.157" y="71.374" size="1.778" layer="95"/>
+<attribute name="VALUE" x="240.157" y="67.818" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="247.65" y="79.375" smashed="yes" rot="R90" grouprefs="HEATER_POWER_DRIVER">
-<attribute name="NAME" x="246.1514" y="78.105" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="250.952" y="75.565" size="1.778" layer="96" rot="R90"/>
+<instance part="CN2" gate="G$1" x="251.46" y="60.96" smashed="yes" rot="R90" grouprefs="HEATER_POWER_DRIVER">
+<attribute name="NAME" x="249.9614" y="59.69" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="254.762" y="57.15" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="235.585" y="99.06" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
-<attribute name="NAME" x="231.775" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="231.775" y="95.758" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="239.395" y="80.645" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
+<attribute name="NAME" x="235.585" y="82.1436" size="1.778" layer="95"/>
+<attribute name="VALUE" x="235.585" y="77.343" size="1.778" layer="96"/>
 </instance>
 <instance part="B1" gate="G$1" x="209.55" y="144.145" smashed="yes" grouprefs="ZERO_CROSSING_MONITOR">
 <attribute name="VALUE" x="205.74" y="152.4" size="1.778" layer="96"/>
@@ -24805,14 +24809,11 @@ BT138_SERIES_2.pdf</description>
 <instance part="SUPPLY4" gate="G$1" x="239.395" y="165.1" smashed="yes" grouprefs="ZERO_CROSSING_MONITOR">
 <attribute name="VALUE" x="239.4204" y="168.91" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R7" gate="G$1" x="198.12" y="99.06" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
-<attribute name="NAME" x="194.31" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="194.31" y="95.758" size="1.778" layer="96"/>
+<instance part="R7" gate="G$1" x="208.915" y="87.63" smashed="yes" rot="R270" grouprefs="HEATER_POWER_DRIVER">
+<attribute name="NAME" x="210.4136" y="91.44" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="207.137" y="84.455" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="199.39" y="81.915" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
-<attribute name="VALUE" x="199.39" y="80.645" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="LCD1" gate="G$1" x="368.935" y="220.345" smashed="yes" rot="MR0" grouprefs="USER_INTERFACE">
+<instance part="CN4" gate="G$1" x="368.935" y="220.345" smashed="yes" rot="MR0" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="338.455" y="235.585" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="370.205" y="234.315" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -24825,33 +24826,33 @@ BT138_SERIES_2.pdf</description>
 <instance part="SUPPLY9" gate="G$1" x="330.2" y="216.535" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="VALUE" x="330.2" y="215.265" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="U2" gate="G$1" x="97.155" y="55.88" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="81.915" y="85.09" size="1.778" layer="96"/>
-<attribute name="NAME" x="82.042" y="87.503" size="1.778" layer="95"/>
+<instance part="U2" gate="G$1" x="97.155" y="50.8" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="81.915" y="80.01" size="1.778" layer="96"/>
+<attribute name="NAME" x="82.042" y="82.423" size="1.778" layer="95"/>
 </instance>
-<instance part="C1" gate="G$1" x="50.165" y="45.72" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="52.959" y="43.815" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.959" y="40.767" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="50.165" y="40.64" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="52.959" y="38.735" size="1.778" layer="95"/>
+<attribute name="VALUE" x="52.959" y="35.687" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="52.705" y="71.12" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="54.229" y="76.962" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="57.531" y="67.564" size="1.778" layer="96" rot="R180"/>
+<instance part="Q1" gate="G$1" x="52.705" y="66.04" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="54.229" y="71.882" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="57.531" y="62.484" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C5" gate="G$1" x="45.085" y="73.66" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="43.561" y="78.359" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="43.561" y="75.819" size="1.778" layer="96" rot="R180"/>
+<instance part="C5" gate="G$1" x="45.085" y="68.58" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="43.561" y="73.279" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="43.561" y="70.739" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C6" gate="G$1" x="45.085" y="68.58" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="43.561" y="70.739" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="43.561" y="68.199" size="1.778" layer="96" rot="R180"/>
+<instance part="C6" gate="G$1" x="45.085" y="63.5" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="43.561" y="65.659" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="43.561" y="63.119" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R9" gate="G$1" x="37.465" y="88.9" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="35.9664" y="85.09" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="40.767" y="85.09" size="1.778" layer="96" rot="R90"/>
+<instance part="R9" gate="G$1" x="37.465" y="83.82" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="35.9664" y="80.01" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="40.767" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C2" gate="G$1" x="62.865" y="45.72" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="65.659" y="43.815" size="1.778" layer="95"/>
-<attribute name="VALUE" x="65.659" y="40.767" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="62.865" y="40.64" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="65.659" y="38.735" size="1.778" layer="95"/>
+<attribute name="VALUE" x="65.659" y="35.687" size="1.778" layer="96"/>
 </instance>
 <instance part="U3" gate="G$1" x="81.28" y="154.94" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
 <attribute name="NAME" x="68.58" y="185.039" size="1.778" layer="95" rot="MR180"/>
@@ -24884,11 +24885,11 @@ BT138_SERIES_2.pdf</description>
 <attribute name="NAME" x="52.578" y="131.699" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="48.26" y="128.905" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="CN1" gate="G$1" x="25.4" y="135.89" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
+<instance part="CN6" gate="G$1" x="25.4" y="135.89" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
 <attribute name="VALUE" x="23.622" y="147.828" size="1.27" layer="96" rot="MR0" align="center"/>
 <attribute name="PART" x="23.622" y="149.86" size="1.778" layer="95" rot="MR0" align="center"/>
 </instance>
-<instance part="CN1" gate="G$2" x="20.32" y="125.73" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
+<instance part="CN6" gate="G$2" x="20.32" y="125.73" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
 <attribute name="PART" x="16.51" y="126.746" size="1.778" layer="95" rot="MR90" display="off"/>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="101.6" y="116.84" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
@@ -24900,23 +24901,23 @@ BT138_SERIES_2.pdf</description>
 <instance part="SUPPLY12" gate="G$1" x="25.4" y="116.84" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
 <attribute name="VALUE" x="25.4" y="115.57" size="1.778" layer="96" rot="MR0" align="center"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="34.925" y="21.59" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="34.925" y="20.32" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY13" gate="G$1" x="34.925" y="16.51" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="34.925" y="15.24" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="50.165" y="21.59" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="50.165" y="20.32" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY14" gate="G$1" x="50.165" y="16.51" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="50.165" y="15.24" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY15" gate="G$1" x="62.865" y="21.59" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="62.865" y="20.32" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY15" gate="G$1" x="62.865" y="16.51" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="62.865" y="15.24" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY16" gate="G$1" x="74.295" y="21.59" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="74.295" y="20.32" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY16" gate="G$1" x="74.295" y="16.51" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="74.295" y="15.24" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="37.465" y="99.06" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="37.4904" y="102.87" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY17" gate="G$1" x="37.465" y="93.98" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="37.4904" y="97.79" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY18" gate="G$1" x="62.865" y="99.06" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="62.8904" y="102.87" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY18" gate="G$1" x="62.865" y="93.98" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="62.8904" y="97.79" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY19" gate="G$1" x="104.14" y="194.31" smashed="yes" rot="MR0" grouprefs="USB-SERIAL_CONVERTER">
 <attribute name="VALUE" x="104.1146" y="198.12" size="1.778" layer="96" rot="MR0" align="center"/>
@@ -24942,7 +24943,7 @@ BT138_SERIES_2.pdf</description>
 <attribute name="NAME" x="42.545" y="144.018" size="1.27" layer="95" align="center"/>
 <attribute name="VALUE" x="42.545" y="142.494" size="1.27" layer="96" align="center"/>
 </instance>
-<instance part="U4" gate="G$1" x="381.635" y="125.73" smashed="yes" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR">
+<instance part="CN5" gate="G$1" x="381.635" y="125.73" smashed="yes" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR">
 <attribute name="NAME" x="374.015" y="139.7" size="1.778" layer="95"/>
 <attribute name="VALUE" x="374.015" y="137.16" size="1.27" layer="95"/>
 </instance>
@@ -25009,7 +25010,7 @@ BT138_SERIES_2.pdf</description>
 <attribute name="NAME" x="113.03" y="240.792" size="1.778" layer="95"/>
 <attribute name="VALUE" x="113.03" y="238.379" size="1.778" layer="96"/>
 </instance>
-<instance part="T2" gate="G$1" x="91.44" y="238.125" smashed="yes" grouprefs="POWER_SUPPLY">
+<instance part="CN7" gate="G$1" x="91.44" y="238.125" smashed="yes" grouprefs="POWER_SUPPLY">
 <attribute name="NAME" x="91.44" y="250.19" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="91.44" y="247.65" size="1.27" layer="96" align="center"/>
 </instance>
@@ -25021,7 +25022,7 @@ BT138_SERIES_2.pdf</description>
 <attribute name="NAME" x="133.4008" y="229.235" size="1.27" layer="95" align="center-right"/>
 <attribute name="VALUE" x="140.208" y="229.2604" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="IC1" gate="A1" x="151.765" y="237.49" smashed="yes" grouprefs="POWER_SUPPLY">
+<instance part="U8" gate="A1" x="151.765" y="237.49" smashed="yes" grouprefs="POWER_SUPPLY">
 <attribute name="NAME" x="144.145" y="243.205" size="1.778" layer="95"/>
 <attribute name="VALUE" x="144.145" y="240.665" size="1.778" layer="96"/>
 </instance>
@@ -25048,13 +25049,13 @@ BT138_SERIES_2.pdf</description>
 <instance part="SUPPLY28" gate="G$1" x="103.505" y="214.63" smashed="yes" rot="MR0" grouprefs="POWER_SUPPLY">
 <attribute name="VALUE" x="103.505" y="213.36" size="1.778" layer="96" rot="MR0" align="center"/>
 </instance>
-<instance part="SUPPLY29" gate="P" x="165.735" y="247.015" smashed="yes" grouprefs="POWER_SUPPLY">
-<attribute name="VALUE" x="165.7604" y="250.825" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY29" gate="P" x="165.735" y="250.825" smashed="yes" grouprefs="POWER_SUPPLY">
+<attribute name="VALUE" x="165.7604" y="254.635" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY30" gate="G$1" x="201.295" y="247.015" smashed="yes" grouprefs="POWER_SUPPLY">
-<attribute name="VALUE" x="201.3204" y="250.825" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY30" gate="G$1" x="201.295" y="250.825" smashed="yes" grouprefs="POWER_SUPPLY">
+<attribute name="VALUE" x="201.3204" y="254.635" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="CN2" gate="G$1" x="33.02" y="236.22" smashed="yes" grouprefs="POWER_SUPPLY">
+<instance part="CN1" gate="G$1" x="33.02" y="236.22" smashed="yes" grouprefs="POWER_SUPPLY">
 <attribute name="NAME" x="25.781" y="236.855" size="1.27" layer="95"/>
 <attribute name="VALUE" x="29.591" y="236.22" size="1.27" layer="96" rot="R180"/>
 </instance>
@@ -25076,12 +25077,30 @@ BT138_SERIES_2.pdf</description>
 <instance part="SUPPLY1" gate="P" x="330.2" y="96.52" smashed="yes" grouprefs="COOLING_FAN">
 <attribute name="VALUE" x="330.2254" y="100.33" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="D2" gate="G$1" x="336.55" y="85.09" smashed="yes" rot="R90">
-<attribute name="NAME" x="333.883" y="85.09" size="1.27" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="338.836" y="85.09" size="1.27" layer="96" rot="R90" align="center"/>
+<instance part="D2" gate="G$1" x="336.55" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="333.883" y="83.82" size="1.27" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="338.836" y="83.82" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="SUPPLY31" gate="G$1" x="50.8" y="144.78" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="50.7746" y="148.59" size="1.778" layer="96" rot="MR0" align="center"/>
+</instance>
+<instance part="Q4" gate="G$1" x="205.105" y="62.23" smashed="yes">
+<attribute name="NAME" x="208.915" y="62.865" size="1.778" layer="95"/>
+<attribute name="VALUE" x="208.915" y="60.325" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY32" gate="G$1" x="207.645" y="51.435" smashed="yes">
+<attribute name="VALUE" x="207.645" y="50.165" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="R15" gate="G$1" x="196.215" y="62.23" smashed="yes">
+<attribute name="NAME" x="193.675" y="63.7286" size="1.778" layer="95"/>
+<attribute name="VALUE" x="193.675" y="58.928" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="208.915" y="97.155" smashed="yes" grouprefs="HEATER_POWER_DRIVER">
+<attribute name="VALUE" x="208.9404" y="100.965" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="D4" gate="G$1" x="201.295" y="243.205" smashed="yes" rot="R90">
+<attribute name="NAME" x="196.977" y="243.205" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="198.501" y="243.205" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -25091,7 +25110,7 @@ BT138_SERIES_2.pdf</description>
 <segment>
 <pinref part="T1" gate="G$1" pin="G"/>
 <pinref part="D1" gate="-B1" pin="2"/>
-<wire x1="238.125" y1="88.9" x2="242.57" y2="88.9" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<wire x1="241.935" y1="70.485" x2="246.38" y2="70.485" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
 </segment>
 </net>
 <net name="127VAC" class="0">
@@ -25101,18 +25120,18 @@ BT138_SERIES_2.pdf</description>
 <label x="183.515" y="151.13" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ZERO_CROSSING_MONITOR"/>
 </segment>
 <segment>
-<wire x1="247.65" y1="99.06" x2="240.665" y2="99.06" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<wire x1="251.46" y1="80.645" x2="244.475" y2="80.645" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="A2"/>
-<wire x1="247.65" y1="93.98" x2="247.65" y2="99.06" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
-<wire x1="247.65" y1="99.06" x2="247.65" y2="103.505" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
-<junction x="247.65" y="99.06" grouprefs="HEATER_POWER_DRIVER"/>
-<label x="247.65" y="103.505" size="1.27" layer="95" rot="R90" xref="yes" grouprefs="HEATER_POWER_DRIVER"/>
+<wire x1="251.46" y1="75.565" x2="251.46" y2="80.645" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<wire x1="251.46" y1="80.645" x2="251.46" y2="85.09" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<junction x="251.46" y="80.645" grouprefs="HEATER_POWER_DRIVER"/>
+<label x="251.46" y="85.09" size="1.27" layer="95" rot="R90" xref="yes" grouprefs="HEATER_POWER_DRIVER"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="242.57" x2="33.02" y2="242.57" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <pinref part="F1" gate="G$1" pin="1"/>
-<pinref part="CN2" gate="G$1" pin="P$3"/>
+<pinref part="CN1" gate="G$1" pin="P$3"/>
 <wire x1="33.02" y1="241.3" x2="33.02" y2="242.57" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <label x="34.29" y="243.205" size="1.27" layer="95" grouprefs="POWER_SUPPLY"/>
 </segment>
@@ -25124,12 +25143,12 @@ BT138_SERIES_2.pdf</description>
 <label x="183.515" y="137.16" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ZERO_CROSSING_MONITOR"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="247.65" y1="74.295" x2="247.65" y2="71.755" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
-<label x="247.65" y="71.755" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="HEATER_POWER_DRIVER"/>
+<pinref part="CN2" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="55.88" x2="251.46" y2="53.34" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<label x="251.46" y="53.34" size="1.27" layer="95" rot="R270" xref="yes" grouprefs="HEATER_POWER_DRIVER"/>
 </segment>
 <segment>
-<pinref part="CN2" gate="G$1" pin="P$2"/>
+<pinref part="CN1" gate="G$1" pin="P$2"/>
 <wire x1="84.455" y1="229.87" x2="33.02" y2="229.87" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <wire x1="33.02" y1="231.14" x2="33.02" y2="229.87" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <label x="34.29" y="230.505" size="1.27" layer="95" grouprefs="POWER_SUPPLY"/>
@@ -25142,27 +25161,27 @@ BT138_SERIES_2.pdf</description>
 <wire x1="239.395" y1="162.56" x2="239.395" y2="159.385" width="0.1524" layer="91" grouprefs="ZERO_CROSSING_MONITOR"/>
 </segment>
 <segment>
-<pinref part="LCD1" gate="G$1" pin="VCC"/>
+<pinref part="CN4" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY8" gate="G$1" pin="5V"/>
 <wire x1="335.915" y1="230.505" x2="330.2" y2="230.505" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="330.2" y1="230.505" x2="330.2" y2="234.315" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="37.465" y1="96.52" x2="37.465" y2="93.98" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="37.465" y1="91.44" x2="37.465" y2="88.9" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="AVCC"/>
-<wire x1="76.835" y1="60.96" x2="62.865" y2="60.96" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="62.865" y1="60.96" x2="62.865" y2="96.52" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="55.88" x2="62.865" y2="55.88" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="62.865" y1="55.88" x2="62.865" y2="91.44" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
-<wire x1="76.835" y1="53.34" x2="62.865" y2="53.34" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="62.865" y1="53.34" x2="62.865" y2="60.96" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="62.865" y="60.96" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="48.26" x2="62.865" y2="48.26" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="62.865" y1="48.26" x2="62.865" y2="55.88" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="62.865" y="55.88" grouprefs="MICROCONTROLLER"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="62.865" y1="48.26" x2="62.865" y2="53.34" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="62.865" y="53.34" grouprefs="MICROCONTROLLER"/>
+<wire x1="62.865" y1="43.18" x2="62.865" y2="48.26" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="62.865" y="48.26" grouprefs="MICROCONTROLLER"/>
 <pinref part="SUPPLY18" gate="G$1" pin="5V"/>
 </segment>
 <segment>
@@ -25188,7 +25207,7 @@ BT138_SERIES_2.pdf</description>
 <pinref part="SUPPLY22" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="VDD"/>
+<pinref part="CN5" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY24" gate="G$1" pin="5V"/>
 <wire x1="368.935" y1="130.81" x2="361.95" y2="130.81" width="0.1524" layer="91" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR"/>
 <wire x1="361.95" y1="130.81" x2="361.95" y2="142.875" width="0.1524" layer="91" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR"/>
@@ -25204,22 +25223,20 @@ BT138_SERIES_2.pdf</description>
 <pinref part="LS1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U6" gate="G$1" pin="VOUT"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="197.485" y1="237.49" x2="201.295" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
-<wire x1="201.295" y1="237.49" x2="201.295" y2="233.045" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="212.725" y1="233.045" x2="212.725" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
-<wire x1="212.725" y1="237.49" x2="201.295" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
-<junction x="201.295" y="237.49" grouprefs="POWER_SUPPLY"/>
 <pinref part="SUPPLY30" gate="G$1" pin="5V"/>
-<wire x1="201.295" y1="244.475" x2="201.295" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
+<wire x1="201.295" y1="248.285" x2="201.295" y2="247.015" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
+<pinref part="D4" gate="G$1" pin="K"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="139.7" x2="50.8" y2="142.24" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <pinref part="D3" gate="G$1" pin="K"/>
 <wire x1="46.355" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <pinref part="SUPPLY31" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="SUPPLY5" gate="G$1" pin="5V"/>
+<wire x1="208.915" y1="94.615" x2="208.915" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="0V" class="0">
@@ -25230,13 +25247,7 @@ BT138_SERIES_2.pdf</description>
 <pinref part="U1" gate="G$1" pin="E"/>
 </segment>
 <segment>
-<pinref part="OK1" gate="-1" pin="C"/>
-<pinref part="SUPPLY5" gate="G$1" pin="0V"/>
-<wire x1="206.375" y1="88.9" x2="199.39" y2="88.9" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
-<wire x1="199.39" y1="88.9" x2="199.39" y2="84.455" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
-</segment>
-<segment>
-<pinref part="LCD1" gate="G$1" pin="GND"/>
+<pinref part="CN4" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY9" gate="G$1" pin="0V"/>
 <wire x1="335.915" y1="222.885" x2="330.2" y2="222.885" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="330.2" y1="222.885" x2="330.2" y2="219.075" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
@@ -25272,12 +25283,12 @@ BT138_SERIES_2.pdf</description>
 <wire x1="30.48" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <wire x1="33.02" y1="132.08" x2="33.02" y2="121.92" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <wire x1="33.02" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
-<pinref part="CN1" gate="G$1" pin="4"/>
-<pinref part="CN1" gate="G$2" pin="S1"/>
+<pinref part="CN6" gate="G$1" pin="4"/>
+<pinref part="CN6" gate="G$2" pin="S1"/>
 <wire x1="27.94" y1="121.92" x2="25.4" y2="121.92" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <wire x1="27.94" y1="123.19" x2="27.94" y2="121.92" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <junction x="27.94" y="121.92" grouprefs="USB-SERIAL_CONVERTER"/>
-<pinref part="CN1" gate="G$2" pin="S2"/>
+<pinref part="CN6" gate="G$2" pin="S2"/>
 <wire x1="25.4" y1="123.19" x2="25.4" y2="121.92" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <pinref part="SUPPLY12" gate="G$1" pin="0V"/>
 <wire x1="25.4" y1="119.38" x2="25.4" y2="121.92" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
@@ -25285,36 +25296,36 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="42.545" y1="73.66" x2="34.925" y2="73.66" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="34.925" y1="73.66" x2="34.925" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="42.545" y1="68.58" x2="34.925" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="34.925" y1="68.58" x2="34.925" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="34.925" y1="68.58" x2="42.545" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="34.925" y1="24.13" x2="34.925" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="34.925" y="68.58" grouprefs="MICROCONTROLLER"/>
+<wire x1="34.925" y1="63.5" x2="42.545" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="34.925" y1="19.05" x2="34.925" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="34.925" y="63.5" grouprefs="MICROCONTROLLER"/>
 <pinref part="SUPPLY13" gate="G$1" pin="0V"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="50.165" y1="24.13" x2="50.165" y2="40.64" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="50.165" y1="19.05" x2="50.165" y2="35.56" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="SUPPLY14" gate="G$1" pin="0V"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="62.865" y1="24.13" x2="62.865" y2="40.64" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="62.865" y1="19.05" x2="62.865" y2="35.56" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="SUPPLY15" gate="G$1" pin="0V"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="AGND"/>
-<wire x1="76.835" y1="58.42" x2="74.295" y2="58.42" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="74.295" y1="58.42" x2="74.295" y2="50.8" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="53.34" x2="74.295" y2="53.34" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="53.34" x2="74.295" y2="45.72" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="74.295" y1="50.8" x2="74.295" y2="24.13" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="76.835" y1="50.8" x2="74.295" y2="50.8" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="74.295" y="50.8" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="45.72" x2="74.295" y2="19.05" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="45.72" x2="74.295" y2="45.72" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="74.295" y="45.72" grouprefs="MICROCONTROLLER"/>
 <pinref part="SUPPLY16" gate="G$1" pin="0V"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="GND"/>
+<pinref part="CN5" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY25" gate="G$1" pin="0V"/>
 <wire x1="368.935" y1="123.19" x2="361.95" y2="123.19" width="0.1524" layer="91" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR"/>
 <wire x1="361.95" y1="123.19" x2="361.95" y2="118.11" width="0.1524" layer="91" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR"/>
@@ -25346,7 +25357,7 @@ BT138_SERIES_2.pdf</description>
 <wire x1="136.525" y1="225.425" x2="136.525" y2="220.98" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <wire x1="136.525" y1="220.98" x2="123.19" y2="220.98" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <junction x="123.19" y="220.98" grouprefs="POWER_SUPPLY"/>
-<pinref part="IC1" gate="A1" pin="GND"/>
+<pinref part="U8" gate="A1" pin="GND"/>
 <wire x1="151.765" y1="229.87" x2="151.765" y2="220.98" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <wire x1="151.765" y1="220.98" x2="136.525" y2="220.98" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <junction x="136.525" y="220.98" grouprefs="POWER_SUPPLY"/>
@@ -25378,6 +25389,11 @@ BT138_SERIES_2.pdf</description>
 <pinref part="Q3" gate="G$1" pin="E"/>
 <pinref part="SUPPLY2" gate="G$1" pin="0V"/>
 <wire x1="330.2" y1="60.325" x2="330.2" y2="63.5" width="0.1524" layer="91" grouprefs="COOLING_FAN"/>
+</segment>
+<segment>
+<pinref part="Q4" gate="G$1" pin="E"/>
+<pinref part="SUPPLY32" gate="G$1" pin="0V"/>
+<wire x1="207.645" y1="53.975" x2="207.645" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -25421,8 +25437,8 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(INT0)PD2"/>
-<wire x1="114.935" y1="33.02" x2="118.745" y2="33.02" width="0.1524" layer="91"/>
-<label x="118.745" y="33.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.935" y1="27.94" x2="118.745" y2="27.94" width="0.1524" layer="91"/>
+<label x="118.745" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -25436,34 +25452,35 @@ BT138_SERIES_2.pdf</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="OK1" gate="-1" pin="A2"/>
-<wire x1="226.695" y1="99.06" x2="230.505" y2="99.06" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<pinref part="U7" gate="-1" pin="A2"/>
+<wire x1="230.505" y1="80.645" x2="234.315" y2="80.645" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="OK1" gate="-1" pin="A1"/>
+<pinref part="U7" gate="-1" pin="A1"/>
 <pinref part="D1" gate="-B1" pin="1"/>
-<wire x1="226.695" y1="88.9" x2="230.505" y2="88.9" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<wire x1="230.505" y1="70.485" x2="234.315" y2="70.485" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="OK1" gate="-1" pin="A"/>
+<pinref part="U7" gate="-1" pin="A"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="206.375" y1="99.06" x2="203.2" y2="99.06" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<wire x1="210.185" y1="80.645" x2="208.915" y2="80.645" width="0.1524" layer="91"/>
+<wire x1="208.915" y1="80.645" x2="208.915" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_HEATER" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="99.06" x2="189.865" y2="99.06" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
-<label x="189.865" y="99.06" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="HEATER_POWER_DRIVER"/>
+<label x="186.69" y="62.23" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="HEATER_POWER_DRIVER"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="191.135" y1="62.23" x2="186.69" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(T1)PD5"/>
-<wire x1="114.935" y1="40.64" x2="118.745" y2="40.64" width="0.1524" layer="91"/>
-<label x="118.745" y="40.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.935" y1="35.56" x2="118.745" y2="35.56" width="0.1524" layer="91"/>
+<label x="118.745" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_ROTARY_ENCODER_SIGNAL-A" class="0">
@@ -25474,8 +25491,8 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(OC1)PB1"/>
-<wire x1="114.935" y1="71.12" x2="118.745" y2="71.12" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="71.12" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
+<wire x1="114.935" y1="66.04" x2="118.745" y2="66.04" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="118.745" y="66.04" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="GPIO_ROTARY_ENCODER_SIGNAL-B" class="0">
@@ -25486,8 +25503,8 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(ICP)PB0"/>
-<wire x1="114.935" y1="68.58" x2="118.745" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="68.58" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
+<wire x1="114.935" y1="63.5" x2="118.745" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="118.745" y="63.5" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="GPIO_ROTARY_ENCODER_SWITCH" class="0">
@@ -25498,43 +25515,43 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(T0)PD4"/>
-<wire x1="114.935" y1="38.1" x2="118.745" y2="38.1" width="0.1524" layer="91"/>
-<label x="118.745" y="38.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.935" y1="33.02" x2="118.745" y2="33.02" width="0.1524" layer="91"/>
+<label x="118.745" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_LCD_SCL" class="0">
 <segment>
-<pinref part="LCD1" gate="G$1" pin="SCL"/>
+<pinref part="CN4" gate="G$1" pin="SCL"/>
 <wire x1="335.915" y1="227.965" x2="330.2" y2="227.965" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="330.2" y="227.965" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(ADC5)PC5"/>
-<wire x1="114.935" y1="63.5" x2="118.745" y2="63.5" width="0.1524" layer="91"/>
-<label x="118.745" y="63.5" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.935" y1="58.42" x2="118.745" y2="58.42" width="0.1524" layer="91"/>
+<label x="118.745" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_LCD_SDA" class="0">
 <segment>
-<pinref part="LCD1" gate="G$1" pin="SDA"/>
+<pinref part="CN4" gate="G$1" pin="SDA"/>
 <wire x1="335.915" y1="225.425" x2="330.2" y2="225.425" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="330.2" y="225.425" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(ADC4)PC4"/>
-<wire x1="114.935" y1="60.96" x2="118.745" y2="60.96" width="0.1524" layer="91"/>
-<label x="118.745" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.935" y1="55.88" x2="118.745" y2="55.88" width="0.1524" layer="91"/>
+<label x="118.745" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MCU_RESET" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RESET"/>
-<wire x1="76.835" y1="81.28" x2="37.465" y2="81.28" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="76.2" x2="37.465" y2="76.2" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="37.465" y1="83.82" x2="37.465" y2="81.28" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="37.465" y="81.28" grouprefs="MICROCONTROLLER"/>
-<wire x1="37.465" y1="81.28" x2="32.385" y2="81.28" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="32.385" y="81.28" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
+<wire x1="37.465" y1="78.74" x2="37.465" y2="76.2" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="37.465" y="76.2" grouprefs="MICROCONTROLLER"/>
+<wire x1="37.465" y1="76.2" x2="32.385" y2="76.2" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="32.385" y="76.2" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -25542,26 +25559,19 @@ BT138_SERIES_2.pdf</description>
 <label x="132.08" y="172.72" size="1.27" layer="95" rot="MR180" xref="yes" grouprefs="USB-SERIAL_CONVERTER"/>
 </segment>
 </net>
-<net name="D10" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="(SS)PB2"/>
-<wire x1="114.935" y1="73.66" x2="118.745" y2="73.66" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="73.66" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
-</segment>
-</net>
 <net name="A1" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="CN2" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="A1"/>
-<wire x1="247.65" y1="84.455" x2="247.65" y2="86.36" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
+<wire x1="251.46" y1="66.04" x2="251.46" y2="67.945" width="0.1524" layer="91" grouprefs="HEATER_POWER_DRIVER"/>
 </segment>
 </net>
 <net name="AREF" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="AREF"/>
-<wire x1="76.835" y1="63.5" x2="50.165" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="58.42" x2="50.165" y2="58.42" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="50.165" y1="48.26" x2="50.165" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="50.165" y1="43.18" x2="50.165" y2="58.42" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="UART_MCU_RX" class="0">
@@ -25572,8 +25582,8 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(RXD)PD0"/>
-<wire x1="114.935" y1="27.94" x2="118.745" y2="27.94" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="27.94" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
+<wire x1="114.935" y1="22.86" x2="118.745" y2="22.86" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="118.745" y="22.86" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="UART_MCU_TX" class="0">
@@ -25584,49 +25594,28 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(TXD)PD1"/>
-<wire x1="114.935" y1="30.48" x2="118.745" y2="30.48" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="30.48" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
-</segment>
-</net>
-<net name="D11" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="(MOSI)PB3"/>
-<wire x1="114.935" y1="76.2" x2="118.745" y2="76.2" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="76.2" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
-</segment>
-</net>
-<net name="D12" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="(MISO)PB4"/>
-<wire x1="114.935" y1="78.74" x2="118.745" y2="78.74" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="78.74" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
-</segment>
-</net>
-<net name="D13" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="(SCK)PB5"/>
-<wire x1="114.935" y1="81.28" x2="118.745" y2="81.28" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="81.28" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
+<wire x1="114.935" y1="25.4" x2="118.745" y2="25.4" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="118.745" y="25.4" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="XTAL2"/>
 <pinref part="Q1" gate="G$1" pin="2"/>
-<wire x1="76.835" y1="73.66" x2="52.705" y2="73.66" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="68.58" x2="52.705" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="50.165" y1="73.66" x2="52.705" y2="73.66" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="52.705" y="73.66" grouprefs="MICROCONTROLLER"/>
+<wire x1="50.165" y1="68.58" x2="52.705" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="52.705" y="68.58" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="XTAL1"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
-<wire x1="76.835" y1="68.58" x2="52.705" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="76.835" y1="63.5" x2="52.705" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="50.165" y1="68.58" x2="52.705" y2="68.58" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="52.705" y="68.58" grouprefs="MICROCONTROLLER"/>
+<wire x1="50.165" y1="63.5" x2="52.705" y2="63.5" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="52.705" y="63.5" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
@@ -25635,7 +25624,7 @@ BT138_SERIES_2.pdf</description>
 <wire x1="35.56" y1="139.7" x2="35.56" y2="142.24" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <wire x1="30.48" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <junction x="35.56" y="139.7" grouprefs="USB-SERIAL_CONVERTER"/>
-<pinref part="CN1" gate="G$1" pin="1"/>
+<pinref part="CN6" gate="G$1" pin="1"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="38.735" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 </segment>
@@ -25689,19 +25678,19 @@ BT138_SERIES_2.pdf</description>
 <segment>
 <pinref part="U3" gate="G$1" pin="USBDM"/>
 <wire x1="63.5" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
-<pinref part="CN1" gate="G$1" pin="2"/>
+<pinref part="CN6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
 <wire x1="30.48" y1="134.62" x2="63.5" y2="134.62" width="0.1524" layer="91" grouprefs="USB-SERIAL_CONVERTER"/>
 <pinref part="U3" gate="G$1" pin="USBDP"/>
-<pinref part="CN1" gate="G$1" pin="3"/>
+<pinref part="CN6" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="1WIRE_TEMPERATURE_SENSOR" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="DAT"/>
+<pinref part="CN5" gate="G$1" pin="DAT"/>
 <wire x1="368.935" y1="128.27" x2="349.25" y2="128.27" width="0.1524" layer="91" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR"/>
 <label x="340.995" y="128.27" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="TEMPERATURE_AND_HUMIDITY_SENSOR"/>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -25711,8 +25700,8 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(AIN1)PD7"/>
-<wire x1="114.935" y1="45.72" x2="118.745" y2="45.72" width="0.1524" layer="91"/>
-<label x="118.745" y="45.72" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
+<wire x1="114.935" y1="40.64" x2="118.745" y2="40.64" width="0.1524" layer="91"/>
+<label x="118.745" y="40.64" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -25737,8 +25726,8 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(INT1)PD3"/>
-<wire x1="114.935" y1="35.56" x2="118.745" y2="35.56" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="35.56" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
+<wire x1="114.935" y1="30.48" x2="118.745" y2="30.48" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="118.745" y="30.48" size="1.27" layer="95" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -25757,7 +25746,7 @@ BT138_SERIES_2.pdf</description>
 <segment>
 <wire x1="110.49" y1="242.57" x2="110.49" y2="245.11" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <pinref part="BR1" gate="G$1" pin="AC1"/>
-<pinref part="T2" gate="G$1" pin="1"/>
+<pinref part="CN7" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="245.11" x2="110.49" y2="245.11" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 </segment>
 </net>
@@ -25765,7 +25754,7 @@ BT138_SERIES_2.pdf</description>
 <segment>
 <wire x1="110.49" y1="232.41" x2="110.49" y2="229.87" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <pinref part="BR1" gate="G$1" pin="AC2"/>
-<pinref part="T2" gate="G$1" pin="3"/>
+<pinref part="CN7" gate="G$1" pin="3"/>
 <wire x1="99.06" y1="229.87" x2="110.49" y2="229.87" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 </segment>
 </net>
@@ -25776,13 +25765,13 @@ BT138_SERIES_2.pdf</description>
 <wire x1="330.2" y1="93.98" x2="330.2" y2="92.71" width="0.1524" layer="91" grouprefs="COOLING_FAN"/>
 <pinref part="D2" gate="G$1" pin="K"/>
 <wire x1="330.2" y1="92.71" x2="330.2" y2="91.44" width="0.1524" layer="91" grouprefs="COOLING_FAN"/>
-<wire x1="336.55" y1="88.9" x2="336.55" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="336.55" y1="87.63" x2="336.55" y2="92.71" width="0.1524" layer="91"/>
 <wire x1="336.55" y1="92.71" x2="330.2" y2="92.71" width="0.1524" layer="91"/>
 <junction x="330.2" y="92.71"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="A1" pin="VO"/>
+<pinref part="U8" gate="A1" pin="VO"/>
 <wire x1="165.735" y1="233.045" x2="165.735" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <wire x1="165.735" y1="237.49" x2="161.925" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <pinref part="C12" gate="G$1" pin="1"/>
@@ -25793,7 +25782,7 @@ BT138_SERIES_2.pdf</description>
 <pinref part="U6" gate="G$1" pin="VIN"/>
 <wire x1="179.705" y1="237.49" x2="177.165" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <pinref part="SUPPLY29" gate="P" pin="12VDC"/>
-<wire x1="165.735" y1="244.475" x2="165.735" y2="237.49" width="0.1524" layer="91"/>
+<wire x1="165.735" y1="248.285" x2="165.735" y2="237.49" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -25833,7 +25822,7 @@ BT138_SERIES_2.pdf</description>
 <wire x1="330.2" y1="76.2" x2="330.2" y2="74.93" width="0.1524" layer="91" grouprefs="COOLING_FAN"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="330.2" y1="74.93" x2="330.2" y2="73.66" width="0.1524" layer="91" grouprefs="COOLING_FAN"/>
-<wire x1="336.55" y1="81.28" x2="336.55" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="336.55" y1="80.01" x2="336.55" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="336.55" y1="74.93" x2="330.2" y2="74.93" width="0.1524" layer="91"/>
 <junction x="330.2" y="74.93"/>
 </segment>
@@ -25846,8 +25835,8 @@ BT138_SERIES_2.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="(AIN0)PD6"/>
-<wire x1="114.935" y1="43.18" x2="118.745" y2="43.18" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<label x="118.745" y="43.18" size="1.27" layer="95" xref="yes"/>
+<wire x1="114.935" y1="38.1" x2="118.745" y2="38.1" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="118.745" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -25874,14 +25863,88 @@ BT138_SERIES_2.pdf</description>
 <wire x1="136.525" y1="233.045" x2="136.525" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <wire x1="136.525" y1="237.49" x2="123.19" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <junction x="123.19" y="237.49" grouprefs="POWER_SUPPLY"/>
-<pinref part="IC1" gate="A1" pin="VI"/>
+<pinref part="U8" gate="A1" pin="VI"/>
 <wire x1="141.605" y1="237.49" x2="136.525" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
 <junction x="136.525" y="237.49" grouprefs="POWER_SUPPLY"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="B"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="202.565" y1="62.23" x2="201.295" y2="62.23" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="C"/>
+<pinref part="U7" gate="-1" pin="C"/>
+<wire x1="207.645" y1="67.31" x2="207.645" y2="70.485" width="0.1524" layer="91"/>
+<wire x1="207.645" y1="70.485" x2="210.185" y2="70.485" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="VOUT"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="197.485" y1="237.49" x2="201.295" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
+<wire x1="201.295" y1="237.49" x2="201.295" y2="233.045" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="212.725" y1="233.045" x2="212.725" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
+<wire x1="212.725" y1="237.49" x2="201.295" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
+<junction x="201.295" y="237.49" grouprefs="POWER_SUPPLY"/>
+<wire x1="201.295" y1="239.395" x2="201.295" y2="237.49" width="0.1524" layer="91" grouprefs="POWER_SUPPLY"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,35.56,142.24,+5V,VUSB,,,,"/>
+<approved hash="102,1,339.09,168.275,GND,0V,,,,"/>
+<approved hash="102,1,322.58,179.705,SW2,0V,,,,"/>
+<approved hash="104,1,335.915,222.885,CN4,GND,0V,,,"/>
+<approved hash="104,1,335.915,230.505,CN4,VCC,5V,,,"/>
+<approved hash="104,1,76.835,45.72,U2,GND,0V,,,"/>
+<approved hash="104,1,76.835,48.26,U2,VCC,5V,,,"/>
+<approved hash="104,1,76.835,55.88,U2,AVCC,5V,,,"/>
+<approved hash="104,1,76.835,53.34,U2,AGND,0V,,,"/>
+<approved hash="202,1,99.06,152.4,U3,CTS#,,,,"/>
+<approved hash="202,1,99.06,154.94,U3,DCD#,,,,"/>
+<approved hash="202,1,99.06,157.48,U3,DSR#,,,,"/>
+<approved hash="202,1,99.06,162.56,U3,RI#,,,,"/>
+<approved hash="104,1,99.06,167.64,U3,VCCIO,5V,,,"/>
+<approved hash="104,1,99.06,142.24,U3,AGND,0V,,,"/>
+<approved hash="104,1,99.06,139.7,U3,GND1,0V,,,"/>
+<approved hash="104,1,99.06,137.16,U3,GND2,0V,,,"/>
+<approved hash="104,1,99.06,134.62,U3,GND3,0V,,,"/>
+<approved hash="104,1,63.5,142.24,U3,3V3OUT,N$32,,,"/>
+<approved hash="202,1,63.5,147.32,U3,RESET#,,,,"/>
+<approved hash="202,1,63.5,167.64,U3,OSCI,,,,"/>
+<approved hash="104,1,63.5,175.26,U3,VCC,5V,,,"/>
+<approved hash="104,1,368.935,130.81,CN5,VDD,5V,,,"/>
+<approved hash="104,1,368.935,123.19,CN5,GND,0V,,,"/>
+<approved hash="104,1,188.595,229.87,U6,GND,0V,,,"/>
+<approved hash="208,1,239.395,162.56,5V,sup,,,,"/>
+<approved hash="208,1,330.2,234.315,5V,sup,,,,"/>
+<approved hash="208,1,37.465,91.44,5V,sup,,,,"/>
+<approved hash="208,1,62.865,91.44,5V,sup,,,,"/>
+<approved hash="208,1,104.14,191.77,5V,sup,,,,"/>
+<approved hash="208,1,60.96,191.77,5V,sup,,,,"/>
+<approved hash="208,1,40.64,191.77,5V,sup,,,,"/>
+<approved hash="208,1,25.4,191.77,5V,sup,,,,"/>
+<approved hash="208,1,361.95,142.875,5V,sup,,,,"/>
+<approved hash="208,1,349.25,142.875,5V,sup,,,,"/>
+<approved hash="208,1,379.095,93.98,5V,sup,,,,"/>
+<approved hash="208,1,197.485,237.49,5V,out,,,,"/>
+<approved hash="208,1,201.295,244.475,5V,sup,,,,"/>
+<approved hash="208,1,50.8,142.24,5V,sup,,,,"/>
+<approved hash="208,1,208.915,94.615,5V,sup,,,,"/>
+<approved hash="113,1,40.3183,185.42,LED2,,,,,"/>
+<approved hash="113,1,25.0783,185.42,LED3,,,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
