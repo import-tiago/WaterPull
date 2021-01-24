@@ -14,12 +14,15 @@
 // Hardware Definitions
 #define Temperature_Sensor_Pin 7
 
-#define Rotary_Enconder_Clock_Pin 8
-#define Rotary_Enconder_Data_Pin 9
-#define Rotary_Enconder_Switch_Pin 4
-#define Buzzer_Pin 3
-#define Heater_Pin 5
-#define Cooler_Pin 6
+#define Rotary_Enconder_Clock_Pin   8
+#define Rotary_Enconder_Data_Pin 	9
+#define Rotary_Enconder_Switch_Pin  4
+#define Zero_Crossing_Pin 			2	
+#define Buzzer_Pin 					3
+#define Heater_Pin 					5
+#define Cooler_Pin 					6
+#define Zero_Crossing_Interrupt     0
+
 
 
 // Application Constants
@@ -52,6 +55,11 @@ unsigned long Previous_Millis = 0;
 unsigned long ISR_Tick = 0;
 
 volatile int Current_Rotary_Position = 0;
+
+
+volatile boolean zero_cross = false;
+
+int Heater_Power = 1; //0-255 (duty cycle)
 
 
 bool Toggle = false;
@@ -98,6 +106,7 @@ StatesFSM stateFSM = STARTING;
 // Functions Prototypes
 void Change_Machine_State_to(StatesFSM New_State);
 void Trigger_Buzzer_Alarm();
+void Cure_Time_Decrement();
 
 void Read_Rotary_Enconder()
 {
@@ -182,7 +191,13 @@ void IST_TIMER_0(void)
 {
 	Read_Rotary_Enconder();
 	Read_Ambient_Sensor();
+	Cure_Time_Decrement();
 
+	
+}
+
+void Cure_Time_Decrement()
+{
 	if(stateFSM == HEATING) {
 		ISR_Tick++;
 		
@@ -195,12 +210,12 @@ void IST_TIMER_0(void)
 				Change_Machine_State_to(FINISH_CURE);
 			}
 		}
-	}	
+	}
 }
 
 void Trigger_Buzzer_Alarm()
 {
-	int beep = SOUND_ALARM_NUMBER_BEEP + 1;
+	int beep = SOUND_ALARM_NUMBER_BEEP;
 		
 	do {
 		if (millis() - Previous_Millis > SOUND_ALARM_PERIOD_BEEP)
@@ -292,10 +307,13 @@ void Show_Cure_Time_Setpont()
 	int hours = Setpoint_Cure_Time / 60;
 	int mins = round((((Setpoint_Cure_Time / 60.0)) - hours) * 60);
 
-	if(hours < 0 || mins < 0){
-		hours = 0;
+	if(hours <= 0 && mins <= 0)
+	{
+		hours = 0;	
 		mins = 1;
+		Setpoint_Cure_Time = 1;
 	}
+	
 	
 	char array_buf[10];
 	if(mins < 10)
@@ -369,7 +387,7 @@ void Run_SFM()
 		}
 
 		case HEATING: {
-
+			digitalWrite(Cooler_Pin, HIGH);
 			if (millis() - Previous_Millis > TEXT_BLINK_TIME)
 			{
 				Previous_Millis = millis();
@@ -396,7 +414,16 @@ void Run_SFM()
 					LCD.setCursor(11, 1); LCD.write(ARROW_RIGHT);
 					Show_Cure_Time_Setpont();
 				}
-			}			
+			}
+
+			if(zero_cross) {
+				zero_cross = false;
+				analogWrite(Heater_Pin, Heater_Power);    
+				delayMicroseconds(500);
+				digitalWrite(Heater_Pin, LOW);
+
+			}
+
 			break;
 		}
 		
@@ -460,11 +487,16 @@ void Run_SFM()
 		}
 	
 		case FINISH_CURE: {
+			digitalWrite(Cooler_Pin, LOW);
 			Change_Machine_State_to(WAITING_START);
 			Trigger_Buzzer_Alarm();
 			break;
 		}
 	}
+}
+
+void ISR_GPIO() {
+  zero_cross = true;
 }
 
 void setup()
@@ -485,7 +517,8 @@ void setup()
 	pinMode(Heater_Pin, OUTPUT);
 	digitalWrite(Heater_Pin, HIGH);
 
-	
+	pinMode(Heater_Pin, OUTPUT);
+	digitalWrite(Heater_Pin, LOW);
 
 	Timer1.initialize(1000); // 1ms
 	Timer1.attachInterrupt(IST_TIMER_0);
@@ -494,7 +527,9 @@ void setup()
 	LCD.setBacklight(HIGH);
 
 	LCD.createChar(0, DownArrow);
-	LCD.createChar(1, RightArrow);
+	LCD.createChar(1, RightArrow);	  
+  
+  	attachInterrupt(Zero_Crossing_Interrupt, ISR_GPIO, RISING);
 
 	AmbientSensor.begin();
 }

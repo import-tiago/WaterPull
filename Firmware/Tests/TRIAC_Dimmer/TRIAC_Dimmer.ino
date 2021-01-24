@@ -5,7 +5,7 @@ int Zero_Crossing_Interrupt = 0;
 
 volatile boolean zero_cross = false;
 
-int Heater_Power = 0; //0-255 (duty cycle)
+int Heater_Power = 1; //0-255 (duty cycle)
 
 void setup() {
   
@@ -22,6 +22,9 @@ void loop() {
   if(zero_cross) {
     zero_cross = false;
     analogWrite(PWM_Heater_Pin, Heater_Power);    
+    delayMicroseconds(500);
+    digitalWrite(PWM_Heater_Pin, LOW);
+
   }
   
 }
